@@ -30,20 +30,56 @@ A comprehensive backend application built using **Spring Boot** that streamlines
 
 ---
 
-## Architecture
+## 📂 Project Structure
 
+```text
+financial-accounting-banking-system
+│
+├── .mvn/
+│   └── wrapper/
+│       └── maven-wrapper.properties
+│
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── tejas/
+│   │   │           └── bankingsystem/
+│   │   │               ├── controller/
+│   │   │               │   ├── AccountController.java
+│   │   │               │   └── TransactionController.java
+│   │   │               │
+│   │   │               ├── entity/
+│   │   │               │   ├── Account.java
+│   │   │               │   └── Transaction.java
+│   │   │               │
+│   │   │               ├── repository/
+│   │   │               │   ├── AccountRepository.java
+│   │   │               │   └── TransactionRepository.java
+│   │   │               │
+│   │   │               ├── service/
+│   │   │               │   ├── AccountService.java
+│   │   │               │   └── TransactionService.java
+│   │   │               │
+│   │   │               └── BankingApplication.java
+│   │   │
+│   │   └── resources/
+│   │       └── application.properties
+│   │
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── tejas/
+│                   └── bankingsystem/
+│                       └── DemoApplicationTests.java
+│
+├── .gitattributes
+├── .gitignore
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+└── README.md
 ```
-Controller
-    │
-Service
-    │
-Repository
-    │
-MySQL Database
-```
-
----
-
 ## Future Enhancements
 
 - JWT Authentication & Spring Security
