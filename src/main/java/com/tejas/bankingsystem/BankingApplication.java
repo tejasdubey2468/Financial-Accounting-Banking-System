@@ -21,19 +21,19 @@ import java.util.List;
 import java.util.Scanner;
 
 @SpringBootApplication
-public class DemoApplication implements CommandLineRunner {
+public class BankingApplication implements CommandLineRunner {
 
 	private final AccountService accountService;
 	private final TransactionService transactionService;
 
-	public DemoApplication(AccountService accountService,
-	                       TransactionService transactionService) {
+	public BankingApplication(AccountService accountService,
+	                          TransactionService transactionService) {
 		this.accountService = accountService;
 		this.transactionService = transactionService;
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(BankingApplication.class, args);
 	}
 
 	@Override
