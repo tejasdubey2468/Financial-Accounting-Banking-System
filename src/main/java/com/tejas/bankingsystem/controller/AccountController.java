@@ -5,7 +5,7 @@ import com.tejas.bankingsystem.service.AccountService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+//controll layers
 @RestController
 @RequestMapping("/account")
 public class AccountController {
